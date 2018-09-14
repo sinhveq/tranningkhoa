@@ -3,7 +3,14 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+    teacherUrl : 'teacher-api/teachers',
+    httpOptions: {
+        headers: {
+            'Content-Type':  'application/json',
+            'Authorization': 'my-auth-token'
+        }
+    },
 };
 
 /*
