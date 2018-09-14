@@ -7,10 +7,10 @@ import { HttpClient, HttpParams } from '@angular/common/http';
 @Injectable()
 export class TeacherSevice {
     teacherUrl = 'teacher-api/teachers';  // URL to web api
-    constructor(private http: HttpClient){
+    constructor(private http: HttpClient) {
     }
 
-    getteacher(){
+    getTeachers() {
         return this.http.get(this.teacherUrl);
     }
 }
